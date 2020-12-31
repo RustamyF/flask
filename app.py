@@ -9,7 +9,7 @@ import numpy as np
 import joblib
 
 
-application=app = Flask(__name__)
+app = Flask(__name__)
 Material(app)
 
 @app.route('/')
@@ -60,4 +60,4 @@ def analyze():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(host='0.0.0.0', port=8080)
